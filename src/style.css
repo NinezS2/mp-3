@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+#container{
+    display: flex;
+    width: 100%;
+}
+
+header, footer{
+    text-align: left;
+    padding: 20px;
+    background-color: #d8c4e8;
+}
+
+nav {
+    width: 30%;
+    padding: 20px;
+    background-color: #eee4f5;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li{
+    margin-bottom: 4%
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: "Roboto Mono", "Courier New", Calibri, courier, monospace;
+}
+
+main{
+    flex: 1;
+   max-width: 70%;
+    height: 110vh;
+    padding: 20px;
+    background-color: #f8f4fb;
+}
+
+img {
+    max-width: 40%;
+    height: auto;
+}
+
+h1 {
+    font-size: calc(24px + 1vw);
+}
+h2{
+    font-size: calc(20px + 0.5vw);
+    margin-bottom: 5px;
+}
+p, li, a{
+    font-size: calc(14px + 0.2vw);
+}
+
+p{
+    margin-bottom: 3px;
+}
+
+.calculator{
+    margin-top: 30px;
+    padding: 20px;
+    text-align: left;
+}
+
+.calculator input {
+    padding: 10px;
+    margin: 5px;
+    max-width: 200px;
+    display: block;
+}
+
+.calculator label{
+    display: block;
+}
+
+.calculator-buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.calculator button{
+    padding: 10px 15px;
+    font-family: 'Roboto Mono', 'Courier New', Calibri, courier, monospace;
+    font-size: calc(14px + 0.2vw);
+}
+
+@media screen and (max-width: 1000px) {
+    #container{
+        flex-wrap: wrap;
+    }
+    main {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #container{
+        flex-direction: column;
+    }
+    header {
+        text-align: center;
+        padding: 10px;
+    }
+    nav{
+        width: 100%;
+        padding: 10px;
+    }
+    nav ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1px;
+        justify-content: center;
+    }
+    nav li{
+        margin-bottom: 0%
+    }
+    nav a{
+        display: block;
+        padding: 8px 10px;
+    }
+    main{
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+    }
+    footer{
+        padding: 10px;
+    }
+}
